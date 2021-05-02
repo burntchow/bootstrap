@@ -24,15 +24,29 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        
+        p{
+            font-size: 20px;
+        }
+        @keyframes effect{
+            0% { color:midnightblue; }
+            50% { color:mediumpurple; }
+            100% { color: midnightblue; }
+        }
+        h1{
+            animation: effect 5s linear infinite;
+            font-size: 70px;
+            
+            
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 1px rgb(255, 215, 235);
+            
+        }
         .pyramind1{
             border-radius: 10px;
             background: url("pyramid.jpg");
             width: 200px;
             height: 150px;
         }
-        
-
         .container{
             width: 100%;
             padding-right: 15px;
@@ -63,6 +77,13 @@
             background-repeat: no-repeat;
             padding: 80px;
         }
+        .section3{
+            background-image: url("pinkbg2.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 80px;
+        }
         .content{
             max-width: 480px;
             padding-top: 40px;
@@ -79,30 +100,38 @@
 <body>
 
 
-<div class="parallax"></div>
-
-<!-- Do not display this image at the moment
-<div style="margin-top: 10;">
-    <h1>Hello World!</h1>
+<div class="parallax">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!--
+    <h1>Hello. My name is Aveline Villaganas.</h1>
+    -->
+    <div class="jumbotron text-center" style="margin-bottom:0; background-color: transparent">
+        <h1>Hello. My name is Aveline Villaganas.</h1>
+    </div>
+    
 </div>
 
--->
-
+<!-- 
 <div class="jumbotron text-center" style="margin-bottom:0; background-color: rgb(250, 170, 201);">
     <h1>Hello. My name is Aveline Villaganas.</h1>
 
-    <!--
-  <h3>Roni Allen - Part Time Faculty <i class="fas fa-university" style="font-size:60px;color:gold;text-shadow:2px 2px 4px #000000;"></i></h3>
-    -->
-
 </div>
+-->
+
+
+
 
 <div class="sections">
     <div class="container">
         <div class="row" style="margin-top:30px">
             <div class = "col-md-5">
 
-                <img src="me1.jpg" alt="Ave" width="350" height="470" >
+                <img src="me1.jpg" alt="Ave" width="350" height="470" style=" box-shadow:5px 5px 5px #999;">
 
             </div>
 
@@ -110,7 +139,7 @@
             <div class="col-md-7">
                 <h2>WHO AM I?</h2>
                 <p>
-                    Great question. I am a student enrolled at Cal State Long Beach, majoring in Computer Science. I have an interest in minoring in Cybersecurity ever since
+                    Great question. I am a student enrolled at Cal State Long Beach, majoring in Computer Science. I've had an interest in minoring in Cybersecurity ever since
                     I played in picoCTF with some of my friends in high school. As a matter of fact this picture of me was taken on my graduation as I was part of the Class of 2020. Although
                     I wasn't the most optimistic about having class online, I have managed to join an amazing club and interact with a number of new friends despite the circumstances. 
                 </p>
@@ -128,34 +157,64 @@
 </div>
 
 
-<div class="section2">
-    <div class="container2">
-        
-        <div class="col-lg-4 col-md-7 col-sm-8">
-            <img src="pyramid.jpg" alt="csulb" width="320" height="230" >
+<div class="section3">
+    <div class="container">
+        <div class="jumbotron text-center" style="margin-bottom:0; background-color: transparent">
+            <h1>Other fun facts:</h1>
         </div>
 
+        <div class="container2">
 
-        <div class="col-lg-4 col-md-7 col-sm-8">
-            <img src="golf.jpg" alt="csulb" width="320" height="230" >
+            
+            <div class="row" style="margin-top:30px">
+
+                <div class = "col-md-5">
+                    <img src="rover.png" alt="csulb" width="320" height="230" >
+                </div>
+
+                <div class = "col-md-7">
+                    <p>
+                        Currently a member of the Long Beach Lunabotics team under the programming and design subsystems. LUNABOTICS is a great club which welcomes all majors regardless of what subsystem they want to participate in.
+                        As the semester is coming to a close, LUNABOTICS will be focusing on the design of next years' rover along with mini projects for new members to take part in. The picture on the right was take on Beach Day when the team goes out to test the rover out on the sand.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <hr class="featurette-divider">
+
+
+            <div class="row" style="margin-top:30px">
+                <div class = "col-md-5">
+                    <img src="golf.jpg" alt="csulb" width="320" height="230" >
+                </div>
+
+                <div class = "col-md-7">
+                    <p>
+                        Something not a lot of people know about me is that I've played golf for roughly 8 years. I have participated and placed in competitive tournaments for the SCPGA, and played varsity for all four years of high school.
+                        Since coming to Cal State Long Beach I haven't been active in this sport at all, not just because I want to focus on school, but there's also a global pandemic going on. Maybe when it's safe to go outside again I can 
+                        go out on the course with some of my old teammates again. 
+                    </p>
+                </div>
+            </div>
+
+
         </div>
-
-
-        <div class="col-lg-4 col-md-7 col-sm-8">
-            <img src="golf.jpg" alt="csulb" width="320" height="230" >
-        </div>
-
-
     </div>
 </div>
 
 
-<hr class="featurette-divider">
-
-
 <!-- NOTE TO FUTURE SELF TO PLUG LINKEDIN AND LUNABOTICS WEBSITE -->
 
-<br/>
+
+<div class="section">
+    <div class="jumbotron text-center" style="margin-bottom:0; background-color: transparent">
+        <h1>Social</h1>
+    </div>
+
+
+</div>
 
 <br/>
 
@@ -163,6 +222,7 @@
 
 <br/>
 
+<br/>
 
 
 
@@ -171,6 +231,8 @@
 
 
 
+
+<hr class="featurette-divider">
 
 
 <!-- Do not display this image at the moment
